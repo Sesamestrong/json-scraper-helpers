@@ -1,0 +1,19 @@
+{
+  "name": "json-scraper-helpers",
+  "version": "1.0.0",
+  "description": "Helper functions in the form of a REST API for json-scraper.",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "moment": "^2.24.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node index.js"
+  },
+  "author": "doolie.healey@gmail.com",
+  "license": "ISC"
+}
