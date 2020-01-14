@@ -31,8 +31,8 @@ app.post("/matchDate", (req, res) => {
     res.text(ret);
 });
 
-app.post("/btoa", (req, res) => res.text(Buffer.from(req.body.src,"base64").toString()));
-app.post("/atob", (req, res) => res.text(Buffer.from(req.body.src).toString('base64')));
+app.post("/btoa", (req, res) => res.send(Buffer.from(req.body.src,"base64").toString()));
+app.post("/atob", (req, res) => res.send(Buffer.from(req.body.src).toString('base64')));
 
 app.post("/match", (req, res) => {
     const {str,pattern}=req.body;
